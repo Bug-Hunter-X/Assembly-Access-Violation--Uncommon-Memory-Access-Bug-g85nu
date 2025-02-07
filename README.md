@@ -1,0 +1,5 @@
+# Assembly Access Violation Bug
+This repository demonstrates an uncommon assembly language error: an access violation due to attempting to access memory outside of the accessible address space or in an invalid memory segment.
+The `bug.asm` file contains the erroneous code, while `bugSolution.asm` provides a corrected version.
+The error occurs when the program attempts to access memory at segment address 1000h without ensuring this segment is loaded and accessible.  This can lead to unpredictable program behavior, crashes, or even operating system instability.  This type of error is less common than typical segmentation faults because it often involves improper segment handling or attempting to access memory that isn't mapped into the program's address space. 
+The solution involves careful memory management, ensuring segments are properly loaded and that access is limited to valid memory addresses.
